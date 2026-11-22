@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>게임 개발 노트</title>
+<meta name="description" content="혼자, AI와 함께 도트 주사위 로그라이크를 만드는 기록">
+<meta property="og:title" content="게임 개발 노트">
+<meta property="og:description" content="혼자, AI와 함께 도트 주사위 로그라이크를 만드는 기록">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://doridori0150.github.io/gamedev-notes/">
+<meta property="og:image" content="https://doridori0150.github.io/gamedev-notes/img/shots/battle-boss.png">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@2.40.3/dist/galmuri.css">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">본문으로</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href=""><svg class="die brand-die" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="2" y="2" width="1" height="1"/><rect x="2" y="4" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="6" y="2" width="1" height="1"/><rect x="6" y="4" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/></g></svg><span>게임 개발 노트</span></a>
+    <nav class="tabs" aria-label="갈래"><a class="tab c-log" href="log/"><svg class="die " viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="4" y="4" width="1" height="1"/></g></svg><span class="tab-l"><span class="long">개발일지</span><span class="short">개발일지</span></span></a><a class="tab c-knowhow" href="knowhow/"><svg class="die " viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="2" y="2" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/></g></svg><span class="tab-l"><span class="long">개발 노하우</span><span class="short">노하우</span></span></a><a class="tab c-insight" href="insight/"><svg class="die " viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="2" y="2" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/></g></svg><span class="tab-l"><span class="long">인사이트</span><span class="short">인사이트</span></span></a><a class="tab c-etc" href="etc/"><svg class="die " viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="2" y="2" width="1" height="1"/><rect x="6" y="2" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/></g></svg><span class="tab-l"><span class="long">기타</span><span class="short">기타</span></span></a></nav>
+    <button class="theme" type="button" aria-label="밝게 · 어둡게 바꾸기" title="밝게 · 어둡게">
+      <svg viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path d="M3 0h3v1h1v1h1v1h1v3h-1v1h-1v1h-1v1h-3v-1h-1v-1h-1v-1h-1v-3h1v-1h1v-1h1z"/><path class="half" d="M5 1h1v1h1v1h1v3h-1v1h-1v1h-1z"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero wrap">
+  <div class="hero-t">
+    <p class="kicker">DEV NOTES</p>
+    <h1>게임 개발 노트</h1>
+    <p class="lede">혼자, AI와 함께 도트 주사위 로그라이크를 만드는 기록</p>
+  </div>
+  <figure class="now">
+    <div class="now-f"><img class="pixel" src="img/shots/battle-boss.png" alt="주사위 결투 전투 화면: 대원 에스메가 우두머리 왕 젤리와 싸우고, 아래에 주사위 여섯 개가 놓여 있다" width="960" height="540"></div>
+    <figcaption><span class="now-k">만드는 중</span><strong>주사위 결투</strong><span class="now-l">주사위로 빌드를 짜는 마디 지도 로그라이크. PC로 먼저.</span></figcaption>
+  </figure>
+</section>
+<section class="wrap">
+  <h2 class="sec">갈래</h2>
+  <div class="tiles"><a class="tile c-log" href="log/"><svg class="die big" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="4" y="4" width="1" height="1"/></g></svg><span class="tile-n">개발일지</span><span class="tile-b">무엇을 만들었고 어디서 막혔나</span><span class="tile-c zero">준비 중</span></a><a class="tile c-knowhow" href="knowhow/"><svg class="die big" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="2" y="2" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/></g></svg><span class="tile-n">개발 노하우</span><span class="tile-b">해 보고 남은 방법</span><span class="tile-c zero">준비 중</span></a><a class="tile c-insight" href="insight/"><svg class="die big" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="2" y="2" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/></g></svg><span class="tile-n">인사이트</span><span class="tile-b">남의 경험에서 가져올 것</span><span class="tile-c zero">준비 중</span></a><a class="tile c-etc" href="etc/"><svg class="die big" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="2" y="2" width="1" height="1"/><rect x="6" y="2" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/></g></svg><span class="tile-n">기타</span><span class="tile-b">어디에도 안 들어가는 것</span><span class="tile-c zero">준비 중</span></a></div>
+</section>
+<section class="wrap">
+  <h2 class="sec">새 글</h2>
+  <div class="empty c-log"><svg class="die big" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path class="die-b" d="M1 0h7v1h1v7h-1v1h-7v-1h-1v-7h1z"/><path class="die-s" d="M1 8h7v-1h1v1h-1v1h-7z"/><g class="die-p"><rect x="3" y="2" width="1" height="1"/><rect x="4" y="2" width="1" height="1"/><rect x="5" y="2" width="1" height="1"/><rect x="5" y="3" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="4" y="6" width="1" height="1"/></g></svg><p class="empty-t">아직 글이 없습니다</p><p class="empty-s">첫 글을 준비하고 있어요.</p></div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>게임 개발 노트</span>
+    <span class="foot-r"><a href="">처음</a> · <a href="log/">개발일지</a> · <a href="knowhow/">노하우</a> · <a href="insight/">인사이트</a> · <a href="etc/">기타</a></span>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
