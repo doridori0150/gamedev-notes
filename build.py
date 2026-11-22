@@ -300,7 +300,7 @@ def blocks(lines, ctx):
 def video(yt, title):
     return (
         '<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/%s" title="%s" loading="lazy" '
-        'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" '
+        'allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" '
         'referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>' % (E(yt), E(title))
     )
 

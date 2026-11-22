@@ -299,3 +299,5 @@ a.ts:hover { border-color: var(--line); color: var(--ink); }
   * { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+.legend { font-size: 14px; color: var(--ink2); line-height: 1.6; }
+.legend .unsure { margin: 0 4px 0 0; vertical-align: 2px; }
